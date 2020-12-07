@@ -1,0 +1,112 @@
+/* Made by K. Dushyant Reddy RA1911033010029 CSE-SE 2nd Yr */
+
+
+body {
+    background-image: url('https://3.bp.blogspot.com/-EH8DfTbRpfU/V7cmv04IKLI/AAAAAAAAM6A/mRK9Bu9elXgXUW3EnuvaAq5pV-nKlIVdQCLcB/s1600/HD-Wallpapers1_FOSmVKg.jpeg');
+    background: cover;
+}
+
+#title {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+
+
+form {
+    background-color: #42f5b0;
+	border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+label,
+p,
+a {
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.container {
+    width: 790px;
+    margin: 2.125rem auto 0 auto;
+}
+
+.form-control {
+    
+    width: 600px;
+    height: 2.375rem;
+    color: black;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    border-left: 5px;
+    border-right: 5px;
+}
+
+.form-group {
+    margin-left: 100px;
+    
+}
+
+.form-group1 {
+    margin-left: 250px;
+    
+}
+
+.form-group2 {
+    margin-left: 265px;
+    
+}
+.form-group3 {
+    margin-left: 250px;
+    
+}
+.form-group4 {
+    margin-left: 220px;
+    
+}
+
+
+.input-radio {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 600px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: rgb(17, 89, 196);
+    display: block;
+    width: 100px;
+    padding: 0.75rem;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.sub {
+    margin-left: 345px;
+}
+
+
+@media (max-width: 426px) {
+    #title {
+        font-style: 20px;
+    }
+}

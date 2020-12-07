@@ -1,0 +1,416 @@
+/* Made by K. Dushyant Reddy RA1911033010029 CSE-SE 2nd Yr */
+
+
+@import url('https://fonts.google.com/css?family=Montserrat:500');
+
+* {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-image: url('keep1.jpg');
+}
+
+nav{
+    height: 120px;
+    background: #2c3e50;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:17px;
+    left:12%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin:0 15px;
+}
+
+nav ul li a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+nav ul li a:before{
+ position: absolute;
+ content:'';
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ height: 3px;
+ background:white;
+ transform: scaleX(0);
+ transform-origin:right;
+ transition:transform .4s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin:right ;
+}
+
+label #btn,
+label #cancel {
+    color:white;
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:1118px){
+    nav img{
+      left: 8%;  
+    }
+}
+
+@media (max-width:944px){
+    nav img{
+      left: 6%;
+      top:20px ;
+      width: 130px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+
+
+@media(max-width:860px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #34495e;
+        top: 120px;
+        left:-100%;
+        text-align: center;
+        transition:all .5s ;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+       left:0;
+    }
+    #check:checked ~ label #btn{
+       display: none;
+    }
+    #check:checked ~ label #cancel{
+       display: block;
+    }
+}
+
+.blinking p{
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #34495e;
+   animation-duration: 1150ms;
+   animation-name: blink;
+   animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+/* #gifcontent{
+    background-size: cover;
+    width: auto;
+} */
+.gifimage > img{
+    padding-top: 300px;
+    width: 100%;
+    height: 100px;    
+    
+}
+
+#webdsn{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background: #98c4b9;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align:center;
+        color: #ffffff;
+    }
+    
+    #webdsn h2{
+    text-align: center;
+    color: #2c3e50;
+    
+    }
+    
+    .webdsn-content{
+        padding: 20px;
+        background-size: cover;
+        text-align:center;
+    }
+
+    .webdsn-content p{
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h2::after
+    {
+        content:'';
+        background: #007bff;
+        display: block;
+        height:4px;
+        width:150px;
+        margin: 20px auto 5px;
+    }
+
+    .gifimage1 > img{
+        padding-top: 3px;
+        width: 100%;
+        height: 100px;    
+        
+    }
+
+    #corcat{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+        background: #98c4b9;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align:center;
+            color: #ffffff;
+        }
+        
+        #corcat h2{
+        text-align: center;
+        color: #2c3e50;
+        
+        }
+        
+        .corcat-content{
+            padding: 20px;
+            background-size: cover;
+            text-align:center;
+            position: relative;
+            width: 250px;
+            height: 260px;
+            
+        }
+    
+        .corcat-content p{
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    
+        h2::after
+        {
+            content:'';
+            background: #007bff;
+            display: block;
+            height:4px;
+            width:150px;
+            margin: 20px auto 5px;
+        }
+
+        .card{
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            transform-style: preserve-3d;
+            transition:all 0.5s ease;
+            /* background: #007bff; */
+        }
+
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+
+        .front{
+            margin-left: 40px;
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            backface-visibility: hidden;
+            background: white;
+            color:#333;
+            font-family: "rills slab",sans-serif;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .front img{
+            padding-top: 30px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .back{
+            position: absolute;
+            width: 200px;
+            height: 220px;
+            backface-visibility: hidden;
+            background: #42ACF2;
+            color:white;
+            padding-top: 30px;
+            transform: rotateY(180deg);
+            border-radius: 20px;
+        }
+
+        .card1{
+            margin-left: 300px;
+            position: absolute ;
+            width: 200px;
+            height: 250px;
+            transform-style: preserve-3d;
+            transition:all 0.5s ease;
+            
+        }
+
+        .card1:hover{
+            
+            transform: rotateY(180deg);
+        }
+
+        .card2{
+            margin-left: 600px;
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            transform-style: preserve-3d;
+            transition:all 0.5s ease;
+            
+        }
+
+        .card2:hover{
+            transform: rotateY(180deg);
+        }
+
+        .card3{
+            margin-left: 900px;
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            transform-style: preserve-3d;
+            transition:all 0.5s ease;
+            
+        }
+
+        .card3:hover{
+            transform: rotateY(180deg);
+        }
+
+        .card4{
+            margin-left: 1200px;
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            transform-style: preserve-3d;
+            transition:all 0.5s ease;
+            
+        }
+
+        .card4:hover{
+            transform: rotateY(180deg);
+        }
+
+.footer{
+    background:  #2c3e50;
+    height: 100px;
+    margin: auto;
+    padding: 20px 0px;
+    color: white;
+}
+
+.footer-icons{
+    padding-top: 10px;
+    padding-bottom: 15px;
+width: 100%;
+height: auto;
+margin: auto;
+}
+
+.footer-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #98c4b9;
+}
+
+.footer-icons ul li a{
+    
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.fa-facebook {
+    color: #3B5998;
+  }
+
+.fa-twitter {
+    color: #55ACEE;
+    
+  }
+
+  .fa-linkedin {
+    color: #007bb5;
+    
+  }
+
+  .fa-instagram {
+    color: #ea4c89;
+    
+  }
+
+
+        

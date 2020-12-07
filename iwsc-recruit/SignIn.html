@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" type="text/css" href="SignIn.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body>
+        <div class="container">
+              <center>
+                  <h1 id="title" class="text-center" >Sign Up Form</h1>
+              </center>
+       
+               
+            <form id="survey-form" name="form" action="Page.html" onsubmit="return !!(validateName() & validateEmail() & validatePassword());" >
+                <br>
+                <!--name field-->
+                <div class="form-group">
+                    <label id="username-label" class="form-group1" for="username">Username</label>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter your Name" />
+                </div>
+                
+                <br>
+                <br>
+    
+                <!--Email field-->
+                <div class="form-group">
+                    <label id="email-label" class="form-group2" for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Email" />
+                </div>
+    
+                <br>
+                <br>
+        
+               <!-- Password field -->
+                <div class="form-group">
+                    <label id="password-label" class="form-group3" for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your Password" />
+                </div>
+    
+                <br>
+                <br>
+        
+               <!--Confirm pass field-->
+                <div class="form-group">
+                    <label id="cpassword-label" class="form-group4" for="cpassword">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Retype Password" />
+                </div>
+            
+                <br>
+                <br>
+            
+                <!-- Button -->
+                <div class="form-group sub">
+                    <button type="submit" id="submit" class="submit-button">Submit</a></button>
+                </div>
+    
+                <br>
+                <br>
+        
+            </form>
+        </div>
+    
+           <script>
+        
+                 function validateName(){
+                     var username = document.getElementById("username");
+                     if(username.value.length == ''){
+                         alert("Please enter username")
+                         return false;
+                     }else if (username.value.length < 5){
+                         alert("Username must be 5 char long")
+                         return false;
+                     }
+                         return true;
+                         
+                 }
+                 
+                 function validateEmail(){
+                     var email=document.getElementById("email").value;
+                     var atindex=email.indexOf('@');
+                     var dotindex=email.lastIndexOf('.');
+                 
+                     if(atindex<=0 || atindex+1 >= dotindex || dotindex+1 >=email.length-1){
+                         alert("Invalid email")
+                         return false;
+                     }
+                     return true;
+                 }
+
+                 function validatePassword(){
+                     var password = document.getElementById("password")
+                   , cpassword = document.getElementById("cpassword");
+                   if(password.value == '') {
+                     alert("Please enter password")
+                     return false;
+                   } else if(cpassword.value == ''){
+                     alert("Please enter confirm password")
+                     return false;
+                   } else if(password.value != cpassword.value){
+                       alert("Password didnt match")
+                       return false;
+                   } else
+                       alert("Success")
+                       return true;
+                 }
+                 
+                            
+
+            </script>
+    
+    </body>
+</html>
+
+
+
+<!-- Made by K. Dushyant Reddy RA1911033010029 CSE-SE 2nd Yr -->
