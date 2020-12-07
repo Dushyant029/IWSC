@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Mover(obj){
+        obj.innerHTML="thank u";
+    }
+    function Mdown(obj){
+        obj.innerHTML="Hover me";
+    }
+</script>
+<body>
+    <h1>
+        IW webinar
+    </h1>
+    <!-- <button onClick="window.print();">Printing</button> -->
+    <div  onmouseover="Mover(this);" onmouseout="Mdown(this);" style="background-color: #d94a38; width:120px;height: 20px;padding: 40;">
+     Hover over me
+    </div>
+</body>
+</html>

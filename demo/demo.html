@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" type="text/css" href="demo.css">
+        <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    </head>
+    <script src="demo.js">Display</script>
+    <body>
+       <div class="container">
+           <center><h1 id="title" class="text-center">SURVEY FORM</h1></center>
+           <header class="header">
+               <hr>
+               <center>
+                 <a href="https://www.inceptionwave.in/" id="description" class="description text-center">Inception Wave Student Copter</a>   
+               </center>
+               <br>
+               <center>
+                   <img src="./logo.png" alt="An image" height="100px" width="100px">
+               </center>
+           </header>
+           <form id="survey-form">
+               <br>
+               <div class="form-group">
+                  <label id="name-label" for="Name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="enter ur name" required>
+                  
+               </div>
+               <br>
+               <div class="form-group" onsubmit="clickme();">
+                <label id="email-label" for="Email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="enter ur email" required>
+                
+             </div>
+             <br>
+             <div class="form-group">
+                 <p>Year of Study</p>
+                 <select id="dropdown" name="role" class="form-control" required>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                 </select>
+                 <br>
+             </div>
+             <div class="form-group">
+                 <p>Please select your gender</p>
+                 <label for="male"><input type="radio" id="male" name="gender" value="male" class="input-radio">Male</label>
+                 <label for="female"><input type="radio" id="female" name="gender" value="female" class="input-radio">Female</label>
+                 <label for="other"><input type="radio" id="other" name="gender" value="other" class="input-radio">Other</label>
+             </div>
+             <br>
+             <div class="form-group">
+                 <p>Any Queries</p>
+                 <textarea id="comments" class="input-textarea form-control" name="content" placeholder="Write here..." required></textarea>
+             </div>
+             <br>
+             <br>
+             <div class="form-group sub">
+                 <button type="submit" id="submit" class="submit-button">Submit</button>
+             </div>
+           </form>
+       </div>
+    </body>
+</html>

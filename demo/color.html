@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   function mDown(obj){
+       obj.style.backgroundColor="blue";
+   }
+   function mUp(obj){
+       obj.style.backgroundColor="pink";
+   }
+    </script>
+</head>
+<body  onmousedown="Mclick();" onmouseup="Mclick2();" style="background-color: #d94a38; width:90px;height: 20px;padding: 40px;">
+    <button >ClickMe</button>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+
+<button >
+Click Me</button>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+}
+</script>
+
+</body>
+</html>
